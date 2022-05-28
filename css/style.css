@@ -144,7 +144,7 @@ header a img {
 }
 /* Cierra Rectangulos Blancos */
 .fondoNaranja img:hover, .fondoNaranja iframe:hover, .fondoBlanco img:hover, .fondoBlanco iframe:hover{
-    transform:scale(1.7);
+    transform:scale(1.6);
     transition: linear;
     transition-duration: 2s;
 }
