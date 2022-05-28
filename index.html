@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/shortcutIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Portfolio - Javier González López</title>
+</head>
+<body>
+    <header>
+        <nav class="menuDesk">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/trabajos.html">Trabajos</a></li>
+                <li><a href="./pages/sobreMi.html">Sobre Mí</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--Para Menu Hamburguesa-->
+        <nav role="navigation">
+            <div id="menuMob">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menuMobDes">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/trabajos.html">Trabajos</a></li>
+                    <li><a href="./pages/sobreMi.html">Sobre Mí</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li> <a href="https://www.linkedin.com/in/javier-gonz%C3%A1lez-l%C3%B3pez-60705415a/" target="blank"> <img src="./images/logoLinkedin.png" alt="Logo LinkedIn"></a></li>
+                    <li><a href="https://www.instagram.com/simplyjaviergl/?hl=es" target="blank"><img src="./images/logoInstagram.png" alt="Logo Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCDzzFIEC6niq8UmF3POF7rg" target="blank"><img src="./images/logoYoutube.png" alt="Logo YouTube"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Cierre menu Hamburguesa -->
+        <div class="enlacesLogos">
+            <a href="https://www.linkedin.com/in/javier-gonz%C3%A1lez-l%C3%B3pez-60705415a/" target="blank"> <img src="./images/logoLinkedin.png" alt="Logo LinkedIn"></a>
+            <a href="https://www.instagram.com/simplyjaviergl/?hl=es" target="blank"><img src="./images/logoInstagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCDzzFIEC6niq8UmF3POF7rg" target="blank"><img src="./images/logoYoutube.png" alt="Logo YouTube"></a>
+        </div>
+    </header>
+    <main>
+        <article id="banner">
+            <h1>Javier González López</h1>
+            <h2>Diseñador de Imagen y Sonido</h2>
+        </article>
+        <article class="fondoNaranja">
+            <h2>El Diseño en una frase:</h2>
+            <h3>“El diseño, hoy en día, se ha convertido en parte de todo. Cada una de nuestras vidas se ve atravesada en prácticamente cada momento por el mismo.”</h3>
+        </article>
+        <article>
+            <h2>Trabajos Destacados:</h2>
+            <div class="trabajosDestacados">
+                <div>
+                    <h3>Fotografía</h3>
+                    <img src="./images/fotoDestacada1.jpg" alt="Casa de madera, foto destacada." data-aos="fade-right">
+                </div>
+                <div>
+                    <h3>Diseño</h3>
+                    <img src="./images/disenoDestacado1.jpg" alt="Diseño de aplicación mobile destacada." data-aos="fade-left">
+                </div>
+                <div>
+                    <h3>Dirección</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AnsWSQKqOAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-right"></iframe>
+                </div>
+                <div>
+                    <h3>VFX</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lrOhu1tlMcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-left"></iframe>
+                </div>
+            </div>
+        </article>
+        <article class="fondoNaranja" >
+            <h2 data-aos="flip-left">Servicios Profesionales:</h2>
+            <ul data-aos="flip-left">
+                <li>Dirección</li>
+                <li>Producción y Planificación Audiovisual</li>
+                <li>Edición o Montaje</li>
+                <li>Diseño y Animación 3D</li>
+                <li>Animación 2D</li>
+                <li>Fotografía</li>
+                <li>Diseño de Gráfica</li>
+                <li>Diseño UX/UI</li>
+                <li>VFX</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <div class="footerColumnas explora">
+                <p>Explora</p>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/trabajos.html">Trabajos</a></li>
+                        <li><a href="./pages/sobreMi.html">Sobre Mí</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerColumnas">
+                <p>Mis redes sociales</p>
+                <nav>
+                    <a href="https://www.linkedin.com/in/javier-gonz%C3%A1lez-l%C3%B3pez-60705415a/" target="blank"> <img src="./images/logoLinkedin.png" alt="Logo LinkedIn"></a>
+                    <a href="https://www.instagram.com/simplyjaviergl/?hl=es" target="blank"><img src="./images/logoInstagram.png" alt="Logo Instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCDzzFIEC6niq8UmF3POF7rg" target="blank"><img src="./images/logoYoutube.png" alt="Logo YouTube"></a>
+                </nav>
+            </div>
+        </div>
+        <p>Portfolio Personal de Javier González creado como ejercicio para el curso de Desarrollo Web en la carrera de Coder House. <a href="https://coderhouse.com/" target="blank">Click Aquí</a> para conocer más.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

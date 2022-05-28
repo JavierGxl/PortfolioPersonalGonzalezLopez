@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #f5af31;
+    font-size: 115%;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+a img:hover{
+    width:40%
+}
+h1 {
+    color: white;
+}
+h3{
+    font-size: 1rem;
+}
+/* Menu Hamburguesa no se ve */
+#menuMob{
+    display:none;
+}
+/* Menu Hamburguesa no se ve */
+/* Header */
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background: #f2cc4b;
+    align-items: center;
+    height: 4rem;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+header nav ul li {
+    margin: 0 5% 0 5%;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.enlacesLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header a img {
+    width:35%;
+}
+/* Cierra Header */
+/* Banner */
+#banner {
+    background-image: url("../images/banner.jpg");
+    text-align: center;
+    padding: 10%;
+    background-size: 115%;
+}
+#banner h1{
+    font-size: 3.5rem;
+    font-family: "Merriweather", serif;
+    text-shadow: 0.3rem 0.3rem 0.5rem black;
+    font-weight: 700;
+}
+#banner h2{
+    color: white;
+    font-size: 2.2rem;
+    font-family: "Merriweather", serif;
+    text-shadow: 0.3rem 0.3rem 0.5rem black;
+}
+/* Cierra Banner*/
+/* Rectangulos Naranjas */
+.fondoNaranja {
+    background-color: #f5af31;
+    color: white;
+    padding: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+}
+.fondoNaranja h2{
+    text-align: left;
+    font-size: 2rem;
+    font-weight:700;
+}
+.fondoNaranja h3{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.fondoNaranja ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fondoNaranja ul li{
+    padding: 1rem;
+    list-style-type: none;
+}
+.fondoNaranja ol li{
+    list-style-position:inside;
+}
+.fondoNaranja .textoCentrado{
+    text-align: center;
+}
+.fondoNaranja p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fondoNaranja img{
+    width:400px;
+}
+.fondoNaranja iframe{
+    width:400px;
+}
+/* Cierra Rectangulos Naranjas */
+/* Rectangulos Blancos */
+.fondoBlanco {
+    background-color: white;
+    color: #f5af31;
+    padding: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+}
+.fondoBlanco h2{
+    text-align: left;
+    font-size: 2rem;
+    font-weight:700;
+}
+.fondoBlanco img{
+    width:400px;
+}
+.fondoBlanco iframe{
+    width:400px;
+}
+/* Cierra Rectangulos Blancos */
+.fondoNaranja img:hover, .fondoNaranja iframe:hover, .fondoBlanco img:hover, .fondoBlanco iframe:hover{
+    transform:scale(1.7);
+    transition: linear;
+    transition-duration: 2s;
+}
+/* Tabla */
+.btnEnviar{
+    display: block;
+    padding: 1% 2%;
+    background-color: rgb(89, 89, 230);
+    font-size: 100%;
+    color:white;
+    text-align: center;
+    justify-self: center;
+    position: relative;
+    margin: 1% 45% 5% 45%;
+}
+.contacto{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    margin: 5% 10%;
+    border-style: solid;
+}
+.contacto div {
+    border-style: solid;
+}
+.contacto h3{
+    font-size: 2rem;
+    border-style: solid;
+    text-align: center;
+}
+/* Cierra Tabla */
+/* Menu Trabajos */
+.menuTrabajos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-style: solid;
+    border-width: 0.15rem;
+    
+}
+.menuTrabajos li{
+    list-style-type: none;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    text-align: center;
+    font-size: 1.5rem;
+    height:3rem;
+    font-weight: 700;
+}
+/* Cierra Menu Trabajos */
+/* Index Trabajos */
+.trabajosDestacados{
+    padding: 1rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.trabajosDestacados div{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.trabajosDestacados img{
+    width: 500px;    
+}
+.trabajosDestacados iframe{
+    width: 500px;
+}
+/*Cierra Index Trabajos */
+#fotoJavier{
+    width:30%;
+    margin: 2%;
+    margin-top:0;
+    border-radius: 20%;
+}
+.sobreMi{
+    display: flex;
+    flex-direction: row;
+    margin-top:2%;
+    align-items: space-between;
+}
+/* footer */
+footer {
+    background-color: #525252;
+    display:flex;
+    flex-direction: column;
+}
+footer div{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: center;
+}
+.footerColumnas{
+    display:flex;
+    flex-direction: column;
+}
+.footerColumnas nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerColumnas nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerColumnas nav ul li{
+   list-style-type: none;
+   padding: 0 1rem;
+}
+footer p{
+    margin-top: 1rem;
+    margin-bottom:1.5rem;
+    text-align: center;
+}
+footer p a{
+    color:rgb(20, 20, 109);
+}
+.footerColumnas img{
+    width: 35%
+}
+/* Cierra footer */
+
+/* Versión Mobile */
+@media screen and (max-width:320px) {
+/* Menu Hamburguesa */
+    .menuDesk{
+        display: none;
+    }
+    .enlacesLogos{
+        display:none;
+    }
+    header {
+        background: #f2cc4b;
+        align-items: center;
+    }
+    #menuMob {
+        display: block;
+        position: relative;
+        left: 20px;  
+        z-index: 1;
+    }
+    #menuMob input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    #menuMob span {
+        display: block;
+        width: 45px;
+        height: 6px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    #menuMob input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    #menuMob input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuMob input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menuMobDes {
+        position: absolute;
+        width: 250px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #f2cc4b;
+        list-style-type: none;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        display:block;
+    }
+    #menuMobDes li{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    #menuMobDes li a{
+        color: white;
+    }
+    #menuMobDes li a img{
+        width:50px;
+    }
+    #menuMob input:checked ~ ul {
+        transform: none;
+    }
+    /*Cierra Menu Hamburguesa */
+    body {
+        width: 320px;
+    }
+    /* Banner Mobile*/
+    #banner {
+        padding: 5%;
+        background-position: -125px 0px;
+        background-size: 175%;
+    }
+    #banner h1{
+        font-size: 2rem;
+        padding: 5% 0%;
+        text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+    #banner h2{
+        font-size: 1.2rem;
+        text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+    /* Cierra Banner Mobile*/
+    /* Rectangulos Naranjas Mobile*/
+    .fondoNaranja {
+        padding: 1.5rem;
+        line-height: 2rem;
+    }
+    .fondoNaranja h2{
+        font-size: 1.2rem;
+        padding-bottom: 4%;
+    }
+    .fondoNaranja h3{
+        font-size: 0.9rem;
+    }
+    .fondoNaranja ul{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .fondoNaranja ul li{
+        padding: 0.1rem;
+        font-size: 0.8rem;
+    }
+    .fondoNaranja ol li{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .fondoNaranja p{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .fondoNaranja img{
+        width:250px;
+        box-shadow: 0.2rem 0.1rem 0.3rem black;
+    }
+    .fondoNaranja iframe{
+        width:240px;
+        height:144px;
+        box-shadow: 0.2rem 0.1rem 0.3rem black;
+    }
+    .fondoNaranja .titulosTrabajosNaranja{
+        text-align: center;
+    }
+    /* Cierra Rectangulos Naranjas Mobile */
+    /* Rectangulos Blancos Mobile*/
+    .fondoBlanco {
+        padding: 1.5rem;
+        line-height: 2rem;
+    }
+    .fondoBlanco h2{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight:700;
+        padding-bottom: 4%;
+    }
+    .fondoBlanco img{
+        width:250px;
+        box-shadow: 0.2rem 0.1rem 0.3rem black;
+    }
+    .fondoBlanco iframe{
+        width:240px;
+        height: 144px;
+        box-shadow: 0.2rem 0.1rem 0.3rem black;
+    }
+    /* Cierra Rectangulos Blancos Mobile*/
+    /* Tabla Mobile*/
+    .btnEnviar{
+        display: block;
+        font-size: 80%;
+        margin: 1% 40% 5% 40%;
+    }
+    .contacto{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        margin: 5% 10%;
+        border-style: none;
+        row-gap: 5%;
+    }
+    .contacto div {
+        border-style: solid;
+        border-radius: 20%;
+        border-width: 0.2rem;
+    }
+    .contacto h3{
+        font-size: 1rem;
+        border-style: none;
+    }
+    /* Cierra Tabla Mobile */
+    /* Menu Trabajos Mobile */
+    .menuTrabajos li{
+        padding: 0.4rem 0.2rem;
+        font-size: 1.1rem;
+        height:2rem;
+    }
+    /* Cierra Menu Trabajos Mobile */
+    /* Index Trabajos Mobile */
+    .trabajosDestacados{
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+    .trabajosDestacados div{
+        align-items: center;
+        padding: 10px 0;
+    }
+    .trabajosDestacados img{
+        width: 250px;    
+    }
+    .trabajosDestacados iframe{
+        width: 250px;
+        height:144px;
+    }
+    /*Cierra Index Trabajos Mobile */
+    #fotoJavier{
+        width:50%;
+        height:50%;
+        margin: 0 auto;
+        border-radius: 30%;
+    }
+    .sobreMi{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 5px;
+    }
+    .sobreMi div h2{
+        text-align: center;
+    }
+    .sobreMi div p{
+        font-size: 0.9rem;
+    }
+    /* footer Mobile */
+    .explora {
+        display: none;
+    }
+    footer p{
+        width: 250px;
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+    footer div{
+        margin: 0 auto;
+    }
+    .footerColumnas img{
+        width: 30%;
+    }
+    /* Cierra footer Mobile */
+}
+/* Cierra Versión Mobile */
+
+/* Versión Tablet */
+@media screen and (min-width:321px) and (max-width:600px) {
+/* Menu Hamburguesa */
+    .menuDesk{
+        display: none;
+    }
+    .enlacesLogos{
+        display:none;
+    }
+    #menuMob {
+        display: block;
+        position: relative;
+        left: 20px;  
+        z-index: 1;
+    }
+    #menuMob input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    #menuMob span {
+        display: block;
+        width: 45px;
+        height: 6px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    #menuMob input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    #menuMob input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuMob input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menuMobDes {
+        position: absolute;
+        width: 250px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #f2cc4b;
+        list-style-type: none;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        display:block;
+    }
+    #menuMobDes li{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    #menuMobDes li a{
+        color: white;
+    }
+    #menuMobDes li a img{
+        width:50px;
+    }
+    #menuMob input:checked ~ ul {
+        transform: none;
+    }
+    /*Cierra Menu Hamburguesa */
+    body{
+        width:auto;
+    }
+    /* Banner Tablet*/
+    #banner {
+        padding: 8%;
+        background-position: center;
+        background-size: auto;
+    }
+    #banner h1{
+        font-size: 2.5rem;
+        padding: 7% 0%;
+        text-shadow: 0.3rem 0.3rem 0.1rem black;
+    }
+    #banner h2{
+        font-size: 1.5rem;
+        text-shadow: 0.3rem 0.3rem 0.1rem black;
+    }
+    /* Cierra Banner Tablet*/
+    /* Rectangulos Naranjas Tablet */
+    .fondoNaranja {
+        padding: 1.7rem;
+        line-height: 2.2rem;
+    }
+    .fondoNaranja h2{
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+    }
+    .fondoNaranja h3{
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    .fondoNaranja ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10%;
+    }
+    .fondoNaranja ul li{ 
+        font-size: 1rem;
+    }
+    .fondoNaranja ol li{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .fondoNaranja p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .fondoNaranja img{
+        width:85%;
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
+    }
+    .fondoNaranja iframe{
+        width:85%;
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
+    }
+    .fondoNaranja .titulosTrabajosNaranja{
+        text-align: center;
+    }
+    /* Cierra Rectangulos Naranjas Tablet */
+    /* Rectangulos Blancos Tablet*/
+    .fondoBlanco {
+        padding: 5%;
+        line-height: 2rem;
+    }
+    .fondoBlanco h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight:700;
+        padding-bottom: 4%;
+    }
+    .fondoBlanco img{
+        width:85%;
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
+    }
+    .fondoBlanco iframe{
+        width:85%;
+        box-shadow: 0.3rem 0.3rem 0.3rem black;
+    }
+    /* Cierra Rectangulos Blancos Tablet*/
+     /* Tabla Tablet*/
+     .btnEnviar{
+        display: block;
+        font-size: 80%;
+        margin: 1% 40% 5% 40%;
+    }
+    .contacto{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 4fr;
+        margin: 10% 15%;
+        border-style: none;
+        row-gap: 5%;
+    }
+    .contacto div {
+        border-style: solid;
+        border-radius: 25%;
+        border-width: 0.2rem;
+    }
+    .contacto h3{
+        font-size: 1.2rem;
+        border-style: none;
+    }
+    /* Cierra Tabla Tablet */
+    /* Menu Trabajos Tablet */
+    .menuTrabajos li{
+        padding: 3% 3%;
+        font-size: 1.1rem;
+        height:auto;
+    }
+    /* Cierra Menu Trabajos Tablet */
+    /* Index Trabajos Tablet */
+    .trabajosDestacados{
+        padding: 0.7rem;
+        flex-direction: column;
+    }
+    .trabajosDestacados div{
+        align-items: center;
+        padding: 10px 0;
+    }
+    .trabajosDestacados img{
+        width: 85%;    
+    }
+    .trabajosDestacados iframe{
+        width: 85%;
+    }
+    /*Cierra Index Trabajos Tablet */
+    #fotoJavier{
+        width:50%;
+        height:50%;
+        margin: 0 auto;
+        border-radius: 30%;
+    }
+    .sobreMi{
+        display: flex;
+        flex-direction: column;
+        margin: 15px 10px;
+    }
+    .sobreMi div h2{
+        text-align: center;
+    }
+    .sobreMi div p{
+        font-size: 1rem;
+        margin:5%;
+    }
+    /* footer Tablet */
+    .explora {
+        display: none;
+    }
+    footer p{
+        width: 300px;
+        margin: 20px auto;
+    }
+    footer div{
+        margin: 0 auto;
+    }
+    .footerColumnas img{
+        width: 30%;
+    }
+    /* Cierra footer Tablet */
+}
+/*Cierra Versión Tablet */
