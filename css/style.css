@@ -22,6 +22,9 @@ a img:hover{
 h1 {
     color: white;
 }
+h2{
+    text-align: center;
+}
 h3{
     font-size: 1rem;
 }
@@ -44,6 +47,7 @@ header nav ul {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    padding-top: 5%;
 }
 header nav ul li {
     margin: 0 5% 0 5%;
@@ -88,7 +92,7 @@ header a img {
     text-align: center;
 }
 .fondoNaranja h2{
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     font-weight:700;
 }
@@ -116,11 +120,8 @@ header a img {
     font-size: 1.5rem;
     font-weight: 500;
 }
-.fondoNaranja img{
-    width:400px;
-}
 .fondoNaranja iframe{
-    width:400px;
+   height: 40rem;
 }
 /* Cierra Rectangulos Naranjas */
 /* Rectangulos Blancos */
@@ -132,21 +133,16 @@ header a img {
     text-align: center;
 }
 .fondoBlanco h2{
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     font-weight:700;
 }
-.fondoBlanco img{
-    width:400px;
-}
 .fondoBlanco iframe{
-    width:400px;
+    height: 40rem;
 }
 /* Cierra Rectangulos Blancos */
-.fondoNaranja img:hover, .fondoNaranja iframe:hover, .fondoBlanco img:hover, .fondoBlanco iframe:hover{
-    transform:scale(1.6);
-    transition: linear;
-    transition-duration: 2s;
+.carousel-item img, iframe{
+    width: 80%;
 }
 /* Tabla */
 .btnEnviar{
@@ -161,19 +157,7 @@ header a img {
     margin: 1% 45% 5% 45%;
 }
 .contacto{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
     margin: 5% 10%;
-    border-style: solid;
-}
-.contacto div {
-    border-style: solid;
-}
-.contacto h3{
-    font-size: 2rem;
-    border-style: solid;
-    text-align: center;
 }
 /* Cierra Tabla */
 /* Menu Trabajos */
@@ -182,12 +166,13 @@ header a img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     border-style: solid;
-    border-width: 0.15rem;
-    
+    border-width: 0.2rem; 
+    margin: 0;
+    padding: 0; 
 }
 .menuTrabajos li{
     list-style-type: none;
-    padding: 1rem;
+    padding: auto;
     border-style: solid;
     border-width: 0.15rem;
     text-align: center;
@@ -227,6 +212,9 @@ header a img {
     flex-direction: row;
     margin-top:2%;
     align-items: space-between;
+}
+.sobreMi h2{
+    text-align: left;
 }
 /* footer */
 footer {
@@ -440,27 +428,9 @@ footer p a{
         font-size: 80%;
         margin: 1% 40% 5% 40%;
     }
-    .contacto{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 3fr;
-        margin: 5% 10%;
-        border-style: none;
-        row-gap: 5%;
-    }
-    .contacto div {
-        border-style: solid;
-        border-radius: 20%;
-        border-width: 0.2rem;
-    }
-    .contacto h3{
-        font-size: 1rem;
-        border-style: none;
-    }
     /* Cierra Tabla Mobile */
     /* Menu Trabajos Mobile */
     .menuTrabajos li{
-        padding: 0.4rem 0.2rem;
         font-size: 1.1rem;
         height:2rem;
     }
@@ -682,29 +652,13 @@ footer p a{
         font-size: 80%;
         margin: 1% 40% 5% 40%;
     }
-    .contacto{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 4fr;
-        margin: 10% 15%;
-        border-style: none;
-        row-gap: 5%;
-    }
-    .contacto div {
-        border-style: solid;
-        border-radius: 25%;
-        border-width: 0.2rem;
-    }
-    .contacto h3{
-        font-size: 1.2rem;
-        border-style: none;
-    }
     /* Cierra Tabla Tablet */
     /* Menu Trabajos Tablet */
     .menuTrabajos li{
         padding: 3% 3%;
         font-size: 1.1rem;
         height:auto;
+        
     }
     /* Cierra Menu Trabajos Tablet */
     /* Index Trabajos Tablet */
