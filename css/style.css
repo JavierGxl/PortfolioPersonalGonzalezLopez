@@ -28,11 +28,6 @@ h2{
 h3{
     font-size: 1rem;
 }
-/* Menu Hamburguesa no se ve */
-#menuMob{
-    display:none;
-}
-/* Menu Hamburguesa no se ve */
 /* Header */
 header {
     display: flex;
@@ -40,7 +35,6 @@ header {
     justify-content: space-between;
     background: #f2cc4b;
     align-items: center;
-    height: 4rem;
 }
 header nav ul {
     display: flex;
@@ -61,6 +55,9 @@ header nav ul li {
 }
 header a img {
     width:35%;
+}
+.menuNav{
+    background-color: #f2cc4b;
 }
 /* Cierra Header */
 /* Banner */
@@ -261,88 +258,8 @@ footer p a{
 
 /* Versión Mobile */
 @media screen and (max-width:320px) {
-/* Menu Hamburguesa */
-    .menuDesk{
-        display: none;
-    }
-    .enlacesLogos{
-        display:none;
-    }
-    header {
-        background: #f2cc4b;
-        align-items: center;
-    }
-    #menuMob {
-        display: block;
-        position: relative;
-        left: 20px;  
-        z-index: 1;
-    }
-    #menuMob input {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 2;
-    }
-    #menuMob span {
-        display: block;
-        width: 45px;
-        height: 6px;
-        margin-bottom: 5px;
-        position: relative;
-        background: white;
-        border-radius: 3px;
-        z-index: 1;
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-    }
-    #menuMob input:checked ~ span {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-    }
-    #menuMob input:checked ~ span:nth-last-child(3) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    #menuMob input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
-    }
-    #menuMobDes {
-        position: absolute;
-        width: 250px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
-        background: #f2cc4b;
-        list-style-type: none;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        display:block;
-    }
-    #menuMobDes li{
-        margin-left: 50px;
-        font-size: 30px;
-    }
-    #menuMobDes li a{
-        color: white;
-    }
-    #menuMobDes li a img{
-        width:50px;
-    }
-    #menuMob input:checked ~ ul {
-        transform: none;
-    }
-    /*Cierra Menu Hamburguesa */
     body {
-        width: 320px;
+        width: auto;
     }
     /* Banner Mobile*/
     #banner {
@@ -490,82 +407,6 @@ footer p a{
 
 /* Versión Tablet */
 @media screen and (min-width:321px) and (max-width:600px) {
-/* Menu Hamburguesa */
-    .menuDesk{
-        display: none;
-    }
-    .enlacesLogos{
-        display:none;
-    }
-    #menuMob {
-        display: block;
-        position: relative;
-        left: 20px;  
-        z-index: 1;
-    }
-    #menuMob input {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: absolute;
-        top: -7px;
-        left: -5px;
-        cursor: pointer;
-        opacity: 0;
-        z-index: 2;
-    }
-    #menuMob span {
-        display: block;
-        width: 45px;
-        height: 6px;
-        margin-bottom: 5px;
-        position: relative;
-        background: white;
-        border-radius: 3px;
-        z-index: 1;
-        transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-    }
-    #menuMob input:checked ~ span {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-    }
-    #menuMob input:checked ~ span:nth-last-child(3) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    #menuMob input:checked ~ span:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
-    }
-    #menuMobDes {
-        position: absolute;
-        width: 250px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
-        background: #f2cc4b;
-        list-style-type: none;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        display:block;
-    }
-    #menuMobDes li{
-        margin-left: 50px;
-        font-size: 30px;
-    }
-    #menuMobDes li a{
-        color: white;
-    }
-    #menuMobDes li a img{
-        width:50px;
-    }
-    #menuMob input:checked ~ ul {
-        transform: none;
-    }
-    /*Cierra Menu Hamburguesa */
     body{
         width:auto;
     }
