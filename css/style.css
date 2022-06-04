@@ -215,7 +215,7 @@ header a img {
 }
 /* footer */
 footer {
-    background-color: #525252;
+    background-color: #a3a3a3;
     display:flex;
     flex-direction: column;
 }
