@@ -1,0 +1,24 @@
+.btnEnviar{
+    display: block;
+    padding: 1% 2%;
+    background-color: rgb(89, 89, 230);
+    font-size: 100%;
+    color:$secondColor;
+    text-align: center;
+    justify-self: center;
+    position: relative;
+    margin: 1% 45% 5% 45%;
+    @media screen and (max-width:320px){
+        display: block;
+        font-size: 80%;
+        margin: 1% 40% 5% 40%; 
+    }
+    @media screen and (min-width:321px) and (max-width:600px) {
+        display: block;
+        font-size: 80%;
+        margin: 1% 40% 5% 40%;   
+    }
+}
+.contacto{
+    margin: 5% 10%;
+}
