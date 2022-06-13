@@ -1,14 +1,30 @@
-header {
+footer .footerColumnas nav ul, footer .footerColumnas nav, footer div, .sobreMi, header .enlacesLogos, header nav ul, header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.trabajosDestacados div, body, footer .footerColumnas, footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footerColumnas nav ul, footer .footerColumnas nav, footer div, .sobreMi, header .enlacesLogos, header nav ul, header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trabajosDestacados div, body, footer .footerColumnas, footer {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
   align-items: center;
   background: #f2cc4b;
 }
 header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   text-align: center;
   padding-top: 5%;
 }
@@ -16,11 +32,6 @@ header nav ul li {
   margin: 0 5% 0 5%;
   list-style-type: none;
   font-size: 1.2rem;
-}
-header .enlacesLogos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 header a img {
   width: 35%;
@@ -56,11 +67,11 @@ header .menuNav {
   #banner h1 {
     font-size: 2rem;
     padding: 5% 0%;
-    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    text-shadow: 0.3rem 0.3rem 0.5rem black;
   }
   #banner h2 {
     font-size: 1.2rem;
-    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    text-shadow: 0.3rem 0.3rem 0.5rem black;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 600px) {
@@ -78,6 +89,17 @@ header .menuNav {
     font-size: 1.5rem;
     text-shadow: 0.3rem 0.3rem 0.1rem black;
   }
+}
+
+footer .footerColumnas nav ul, footer .footerColumnas nav, footer div, .sobreMi, header, header nav ul, header .enlacesLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trabajosDestacados div, body, footer .footerColumnas, footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .btnEnviar {
@@ -143,6 +165,17 @@ header .menuNav {
   }
 }
 
+footer .footerColumnas nav ul, footer .footerColumnas nav, footer div, .sobreMi, header, header nav ul, header .enlacesLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trabajosDestacados div, body, footer .footerColumnas, footer {
+  display: flex;
+  flex-direction: column;
+}
+
 #fotoJavier {
   width: 30%;
   margin: 2%;
@@ -167,10 +200,7 @@ header .menuNav {
 }
 
 .sobreMi {
-  display: flex;
-  flex-direction: row;
   margin-top: 2%;
-  align-items: space-between;
 }
 .sobreMi h2 {
   text-align: left;
@@ -203,30 +233,22 @@ header .menuNav {
   }
 }
 
+footer .footerColumnas nav ul, footer .footerColumnas nav, footer div, header, header nav ul, header .enlacesLogos, .sobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trabajosDestacados div, body, footer .footerColumnas, footer {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   background-color: #a3a3a3;
-  display: flex;
-  flex-direction: column;
 }
 footer div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   text-align: center;
-}
-footer .footerColumnas {
-  display: flex;
-  flex-direction: column;
-}
-footer .footerColumnas nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer .footerColumnas nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 footer .footerColumnas nav ul li {
   list-style-type: none;
@@ -281,10 +303,6 @@ footer p a {
   font-family: "Oswald", sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 body h1 {
   color: white;
 }
@@ -502,8 +520,6 @@ a img:hover {
   justify-content: space-evenly;
 }
 .trabajosDestacados div {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 .trabajosDestacados img, .trabajosDestacados iframe {

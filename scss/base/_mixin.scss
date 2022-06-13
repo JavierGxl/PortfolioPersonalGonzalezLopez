@@ -1,0 +1,9 @@
+@mixin chartMod{
+    display: block;
+    font-size: 80%;
+    margin: 1% 40% 5% 40%; 
+}
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}

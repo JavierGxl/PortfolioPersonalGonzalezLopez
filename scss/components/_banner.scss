@@ -1,3 +1,4 @@
+@import "../base/maps";
 #banner{
     background-image: url("../images/banner.jpg");
     text-align: center;
@@ -6,14 +7,14 @@
     h1 {
         font-size: 3.5rem;
         font-family: "Merriweather", serif;
-        text-shadow: 0.3rem 0.3rem 0.5rem black;
+        text-shadow: map-get($map: $banner, $key: shadowBase);
         font-weight: 700;
     }
     h2{
         color: white;
         font-size: 2.2rem;
         font-family: "Merriweather", serif;
-        text-shadow: 0.3rem 0.3rem 0.5rem black;      
+        text-shadow: map-get($map: $banner, $key: shadowBase);      
     }
     @media screen and (max-width:320px) {
         padding: 5%;
@@ -22,11 +23,11 @@
         h1 {
             font-size: 2rem;
             padding: 5% 0%;
-            text-shadow: 0.2rem 0.2rem 0.2rem black;     
+            text-shadow: map-get($map: $banner, $key: shadowBase);     
         }
         h2{
             font-size: 1.2rem;
-            text-shadow: 0.2rem 0.2rem 0.2rem black;      
+            text-shadow: map-get($map: $banner, $key: shadowBase);      
         }
     }
     @media screen and (min-width:321px) and (max-width:600px) {
@@ -36,11 +37,11 @@
         h1{
             font-size: 2.5rem;
             padding: 7% 0%;
-            text-shadow: 0.3rem 0.3rem 0.1rem black;      
+            text-shadow: map-get($map: $banner, $key: shadowTab);      
         }
         h2 {
             font-size: 1.5rem;
-            text-shadow: 0.3rem 0.3rem 0.1rem black;      
+            text-shadow: map-get($map: $banner, $key: shadowTab);      
         }
     } 
 }

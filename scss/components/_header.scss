@@ -1,14 +1,11 @@
+@import "../base/extends";
 header{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
+    @extend %flexRowSpaBet;
     align-items: center;
     background: $headerMain;
     nav{
         ul{
-            display:flex;
-            flex-direction:row;
-            justify-content:space-between;
+            @extend %flexRowSpaBet;
             text-align: center;
             padding-top:5%;
             li{
@@ -19,9 +16,7 @@ header{
         }
     }
     .enlacesLogos{
-        display:flex;
-        flex-direction:row;
-        justify-content: space-between;
+        @extend %flexRowSpaBet;
     }
     a{
         img{

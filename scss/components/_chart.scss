@@ -1,22 +1,21 @@
+@import "../base/extends";
+@import "../base/maps";
+@import "../base/mixin";
 .btnEnviar{
     display: block;
     padding: 1% 2%;
     background-color: rgb(89, 89, 230);
     font-size: 100%;
     color:$secondColor;
-    text-align: center;
-    justify-self: center;
+    text-align: map-get($map: $general, $key: pos);
+    justify-self: map-get($map: $general, $key: pos);
     position: relative;
     margin: 1% 45% 5% 45%;
     @media screen and (max-width:320px){
-        display: block;
-        font-size: 80%;
-        margin: 1% 40% 5% 40%; 
+        @include chartMod;
     }
     @media screen and (min-width:321px) and (max-width:600px) {
-        display: block;
-        font-size: 80%;
-        margin: 1% 40% 5% 40%;   
+        @include chartMod;
     }
 }
 .contacto{

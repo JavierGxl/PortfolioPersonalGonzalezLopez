@@ -1,3 +1,4 @@
+@import "../base/extends";
 #fotoJavier{
     width:30%;
     margin: 2%;
@@ -17,16 +18,13 @@
     }
 }
 .sobreMi{
-    display: flex;
-    flex-direction: row;
+    @extend %flexRowSpaBet;
     margin-top:2%;
-    align-items: space-between;
     h2{
         text-align: left; 
     }
     @media screen and (max-width:320px){
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         margin: 10px 5px;
         div{
             h2{
@@ -38,8 +36,7 @@
         }
     }
     @media screen and (min-width:321px) and (max-width:600px) {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         margin: 15px 10px;
         div{
             h2{
