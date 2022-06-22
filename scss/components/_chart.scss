@@ -4,18 +4,31 @@
 .btnEnviar{
     display: block;
     padding: 1% 2%;
-    background-color: rgb(89, 89, 230);
+    background-color: $mainColor;
     font-size: 100%;
     color:$secondColor;
     text-align: map-get($map: $general, $key: pos);
+    align-self: center;
+    align-items: center;
     justify-self: map-get($map: $general, $key: pos);
     position: relative;
     margin: 1% 45% 5% 45%;
+    &:hover{
+        color: rgb(255, 255, 255);
+        background-color: $headerMain;
+        border-color: $headerMain; 
+    }
+    &:focus{
+        background-color: $headerMain;
+        box-shadow: 0 0 0 0.25rem rgb(242 204 75 / 45%);
+    }
     @media screen and (max-width:320px){
         @include chartMod;
+        margin-left:43%;
     }
     @media screen and (min-width:321px) and (max-width:600px) {
         @include chartMod;
+        margin-left: 43%;
     }
 }
 .contacto{

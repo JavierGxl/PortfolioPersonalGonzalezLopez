@@ -53,23 +53,25 @@
             </ol>
         </article>
         <article class="contacto">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre">
-              </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserte su Mail">
-              </div>
+          <form>
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escriba el Asunto">
-              </div>
+                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre" required>
+                </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su Mensaje"></textarea>
-              </div>
-            <button type="button" class="btn btn-primary btnEnviar">Enviar</button>
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Inserte su Mail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba el Asunto" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba su Mensaje" required></textarea>
+                </div>
+              <button type="button submit" class="btn btnEnviar">Enviar</button>
+          </form>
         </article>
     </main>
     <footer>
